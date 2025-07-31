@@ -31,7 +31,7 @@
     }
     textarea {
       width: 100%;
-      height: 160px;
+      height: 180px;
       margin-top: 15px;
     }
   </style>
@@ -46,14 +46,17 @@
 
   <script>
     function generarPrompt() {
-      const prompt = `Informame en detalle y de forma completa sobre todas las promociones, descuentos, ofertas, reintegros y beneficios vigentes HOY en supermercados de Argentina (como Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, entre otros). Incluí:
+      const prompt = `Buscá y detallá TODAS las promociones, descuentos, ofertas, reintegros y beneficios vigentes HOY en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc). Incluí todo lo siguiente con precisión y actualización:
+
 - Días y horarios específicos
-- Descuentos con tarjetas bancarias y billeteras virtuales (como Cuenta DNI, MODO, etc)
-- Reintegros exclusivos de bancos
-- Ofertas destacadas en productos específicos
-- Promociones por apps o programas de fidelización
-- Beneficios para jubilados o grupos especiales
-Respondé con la información más actualizada posible y bien organizada por supermercado.`;
+- Descuentos y reintegros por bancos (BBVA, Galicia, Nación, Provincia, Santander, Macro, ICBC, etc)
+- Beneficios con billeteras virtuales (Cuenta DNI, MODO, Ualá, Mercado Pago, Naranja X, etc)
+- Ofertas destacadas por rubro (alimentos, bebidas, limpieza, perfumería, electro, etc)
+- Programas de fidelización y apps (Mi Carrefour, Coto Digital, Jumbo+, etc)
+- Promos especiales por segmento (jubilados, AUH, docentes, etc)
+- Tope de reintegros y condiciones específicas
+
+Respondé de forma clara, bien organizada por supermercado y con la información más reciente disponible.`;
       document.getElementById("promptOutput").value = prompt;
     }
 
