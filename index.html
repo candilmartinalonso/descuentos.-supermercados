@@ -46,18 +46,18 @@
 
   <script>
     function generarPrompt() {
-      const prompt = `Hacé una investigación profunda, completa y actualizada. Informá todas las promociones vigentes HOY en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc), incluyendo:
+      const prompt = `Hacé una investigación profunda, completa y actualizada. Informá todas las promociones vigentes esta semana en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc), incluyendo:
 
-- Días y horarios
-- Descuentos y reintegros por banco y billetera virtual (Cuenta DNI, MODO, Mercado Pago, Ualá, Naranja X, etc), especificando en qué supermercados aplica cada uno
+- Días y horarios específicos (detalle por día si aplica: lunes, martes, etc.)
+- Descuentos y reintegros por banco y billetera virtual (Cuenta DNI, MODO, Mercado Pago, Ualá, Naranja X, etc), indicando en qué supermercado aplica cada uno
 - Rubros en oferta (alimentos, bebidas, limpieza, perfumería, electro, etc)
-- Programas de fidelización y apps (ej: Mi Carrefour, Coto Digital, Jumbo+)
+- Programas de fidelización y apps (Mi Carrefour, Coto Digital, Jumbo+)
 - Beneficios especiales (jubilados, AUH, docentes, etc)
 - Topes de reintegro, condiciones y combinaciones posibles
 - Promociones exclusivas online o por app
 - Revisá también https://www.instagram.com/jefadelahorro/?hl=es y otras fuentes relevantes
 
-Respondé de forma clara, resumida, ordenada por supermercado y sin omitir ningún beneficio relevante.`;
+Respondé claro, ordenado por supermercado y día, con resúmenes concretos pero sin omitir beneficios importantes.`;
       document.getElementById("promptOutput").value = prompt;
     }
 
