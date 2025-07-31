@@ -46,18 +46,26 @@
 
   <script>
     function generarPrompt() {
-      const prompt = `Hacé una investigación completa, profunda y actualizada. Aclaración: las respuestas anteriores suelen ser confusas y omiten descuentos. Esta vez, respondé con máxima claridad y sin omitir NINGÚN beneficio vigente. Buscá todas las promociones en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc). Incluí:
+      const prompt = `Hacé una investigación precisa, profunda, clara y completamente actualizada sobre todas las promociones reales y confirmadas en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, entre otros). Todo debe estar basado exclusivamente en fuentes oficiales.
 
-- Días y horarios exactos (por día de la semana)
-- Descuentos y reintegros por banco y billetera virtual (Cuenta DNI, MODO, MP, Ualá, Naranja X, etc), indicando en qué súper aplica cada uno
-- Rubros en oferta (alimentos, limpieza, perfumería, bebidas, electro, etc)
-- Beneficios por apps y programas de fidelización (Mi Carrefour, Jumbo+, Coto Digital, etc)
-- Promociones especiales (jubilados, AUH, docentes, etc)
-- Topes, condiciones, acumulaciones y combinaciones posibles
-- Promos web o exclusivas por app
-- Revisá también https://www.instagram.com/jefadelahorro/?hl=es y otras fuentes confiables y actualizadas
+Mostrá los beneficios vigentes esta semana organizados por:
+- supermercado (uno por uno)
+- día de la semana (lunes a domingo, bien separado)
 
-Respondé con resúmenes bien claros, organizados por supermercado y dentro de cada uno, listá los beneficios por DÍA DE LA SEMANA (lunes, martes, miércoles, etc). NO repitas info vaga ni general. Mostrá TODO lo vigente hoy y esta semana.`;
+Y detallá para cada caso:
+- día exacto y horario de la promoción
+- porcentaje real de descuento (sin usar "hasta")
+- de qué depende el beneficio: banco, billetera, tarjeta, app, monto mínimo, rubro, etc.
+- si se acumula con otras promos
+- tope de reintegro (si lo hay)
+- rubros o productos incluidos (ej: carnes, limpieza, bebidas, etc.)
+- promociones online, presenciales o exclusivas por app
+- beneficios para grupos especiales (jubilados, AUH, etc.), con condiciones y forma de validación
+- fecha de actualización o vigencia
+
+Fuentes obligatorias: páginas oficiales de cada supermercado, homebanking, apps bancarias, billeteras digitales. Se puede complementar con https://www.instagram.com/jefadelahorro/?hl=es, pero nunca usar como fuente principal.
+
+Respondé en forma breve, concreta, ultra clara, sin generalidades, sin repetir y sin ambigüedades. Todo debe estar verificado y comprobable.`;
       document.getElementById("promptOutput").value = prompt;
     }
 
