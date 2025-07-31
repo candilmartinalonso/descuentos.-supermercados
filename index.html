@@ -31,7 +31,7 @@
     }
     textarea {
       width: 100%;
-      height: 180px;
+      height: 200px;
       margin-top: 15px;
     }
   </style>
@@ -46,17 +46,18 @@
 
   <script>
     function generarPrompt() {
-      const prompt = `Buscá y detallá TODAS las promociones, descuentos, ofertas, reintegros y beneficios vigentes HOY en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc). Incluí todo lo siguiente con precisión y actualización:
+      const prompt = `Realizá una investigación exhaustiva y detallá TODAS las promociones, descuentos, ofertas, reintegros y beneficios vigentes HOY en supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc). Incluí:
 
 - Días y horarios específicos
-- Descuentos y reintegros por bancos (BBVA, Galicia, Nación, Provincia, Santander, Macro, ICBC, etc)
-- Beneficios con billeteras virtuales (Cuenta DNI, MODO, Ualá, Mercado Pago, Naranja X, etc)
+- Descuentos y reintegros de CADA banco (BBVA, Galicia, Nación, Provincia, Santander, Macro, ICBC, etc) en CADA supermercado
+- Beneficios con CADA billetera virtual (Cuenta DNI, MODO, Mercado Pago, Ualá, Naranja X, etc) en CADA supermercado
 - Ofertas destacadas por rubro (alimentos, bebidas, limpieza, perfumería, electro, etc)
 - Programas de fidelización y apps (Mi Carrefour, Coto Digital, Jumbo+, etc)
 - Promos especiales por segmento (jubilados, AUH, docentes, etc)
-- Tope de reintegros y condiciones específicas
+- Topes de reintegro, condiciones, acumulabilidad y combinaciones posibles
+- Verificá también las promociones publicadas en el perfil de Instagram @jefadelahorro, ya que suele compartir beneficios actualizados y poco difundidos
 
-Respondé de forma clara, bien organizada por supermercado y con la información más reciente disponible.`;
+Respondé con la información más actualizada posible, bien organizada por supermercado y sin omitir NINGÚN beneficio vigente.`;
       document.getElementById("promptOutput").value = prompt;
     }
 
