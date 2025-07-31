@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Promociones de Supermercados Vigentes</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px 5px 0 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Promociones de Supermercados Vigentes</h3>
+    <button onclick="generarPrompt()">Generar Prompt</button>
+    <button onclick="copiarPrompt()">Copiar</button>
+    <textarea id="promptOutput" readonly></textarea>
+  </div>
+
+  <script>
+    function generarPrompt() {
+      const prompt = `Decime todas las promociones, descuentos, reintegros y beneficios vigentes hoy en todos los supermercados de Argentina (Carrefour, Coto, Día, Changomas, Disco, Vea, Jumbo, etc), incluyendo días especiales, tarjetas bancarias, billeteras virtuales y apps.`;
+      document.getElementById("promptOutput").value = prompt;
+    }
+
+    function copiarPrompt() {
+      const textArea = document.getElementById("promptOutput");
+      textArea.select();
+      document.execCommand("copy");
+    }
+  </script>
+</body>
+</html>
